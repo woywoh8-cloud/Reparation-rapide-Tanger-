@@ -4,32 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Meta Tags Optimisés -->
+    <!-- SEO Meta Tags -->
     <title>Réparation Électroménager Tanger - Nom Réparation Rapide Tanger +212770903382</title>
-    <meta name="description" content="Réparation électroménager Tanger rapide et professionnelle. Réparation frigo, machine à laver, climatiseur, four, hotte, sèche-linge toutes marques. Intervention rapide Tanger +212770903382">
+    <meta name="description" content="Réparation électroménager Tanger rapide et professionnelle. Réparation frigo, machine à laver, climatiseur, four, hotte, sèche-linge toutes marques. Techniciens qualifiés intervention rapide Tanger +212770903382">
     
-    <!-- Mots-clés SEO -->
-    <meta name="keywords" content="réparation électroménager Tanger, réparation frigo Tanger, réparation machine à laver Tanger, réparation climatiseur Tanger, réparation four Tanger, Samsung, LG, Whirlpool, Bosch, Beko, Candy, Indesit, Hotpoint, Electrolux, AEG, Tanger, Tetouan, M'diq">
+    <meta name="keywords" content="réparation électroménager Tanger, réparation frigo Tanger, technicien électroménager Tanger, réparation machine à laver Tanger, Samsung, LG, Whirlpool, Bosch, Beko, Candy, Indesit, Hotpoint, Electrolux, AEG, Tanger">
     
-    <!-- Open Graph pour réseaux sociaux -->
-    <meta property="og:title" content="Réparation Rapide Tanger - Électroménager toutes marques">
-    <meta property="og:description" content="Service de réparation électroménager à Tanger. Frigo, lave-linge, clim, four... +212770903382">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://reparationrapide-tanger.com">
-    
-    <!-- Schema.org LocalBusiness -->
+    <!-- Schema.org -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Nom Réparation Rapide Tanger",
         "telephone": "+212770903382",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Tanger",
-            "addressCountry": "MA"
-        },
-        "description": "Réparation électroménager toutes marques à Tanger",
+        "image": "https://images.unsplash.com/photo-1581092160607-a68a8a5bedf5?w=800",
+        "description": "Techniciens spécialisés réparation électroménager Tanger toutes marques",
         "serviceType": "Réparation électroménager",
         "areaServed": ["Tanger", "Tetouan", "M'diq"]
     }
@@ -49,45 +38,102 @@
         .nav-links a { color: white; text-decoration: none; font-weight: 500; transition: opacity 0.3s; }
         .nav-links a:hover { opacity: 0.8; }
         
-        /* Hero Section */
-        .hero { background: linear-gradient(rgba(0,123,255,0.9), rgba(0,86,179,0.9)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23e3f2fd" width="1200" height="600"/><path fill="%2399ccff" opacity="0.3" d="M0 300 Q300 100 600 300 T1200 300 V600 H0 Z"/></svg>'); 
-               padding: 150px 0 100px; text-align: center; color: white; }
-        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        /* Hero avec image technicien */
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1581092160607-a68a8a5bedf5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover;
+            padding: 150px 0 100px; text-align: center; color: white; position: relative;
+        }
+        .hero::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; 
+            background: linear-gradient(135deg, rgba(0,123,255,0.8), rgba(0,86,179,0.8));
+        }
+        .hero > * { position: relative; z-index: 2; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
         .hero p { font-size: 1.3rem; margin-bottom: 2rem; }
         .cta-button { display: inline-block; background: #ff6b35; color: white; padding: 15px 40px; font-size: 1.2rem; border-radius: 50px; text-decoration: none; font-weight: bold; transition: all 0.3s; box-shadow: 0 5px 15px rgba(255,107,53,0.4); }
         .cta-button:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(255,107,53,0.6); }
         
-        /* Sections */
+        /* Services avec images */
         section { padding: 80px 0; }
         .services { background: #f8f9fa; }
         .about { background: white; }
         .contact { background: linear-gradient(135deg, #28a745, #20c997); color: white; }
         
         h2 { font-size: 2.5rem; text-align: center; margin-bottom: 3rem; color: #007bff; }
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-        .service-card { background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s; }
-        .service-card:hover { transform: translateY(-10px); }
-        .service-icon { font-size: 3rem; margin-bottom: 1rem; }
-        .brands { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 2rem; }
-        .brand { background: #007bff; color: white; padding: 10px 20px; border-radius: 25px; font-weight: bold; }
         
-        /* Contact */
-        .contact-form { max-width: 600px; margin: 0 auto; background: rgba(255,255,255,0.95); padding: 2rem; border-radius: 15px; backdrop-filter: blur(10px); }
-        .form-group { margin-bottom: 1.5rem; }
-        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: bold; }
-        .form-group input, .form-group textarea { width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 8px; font-size: 1rem; transition: border-color 0.3s; }
-        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: #007bff; }
-        .submit-btn { width: 100%; background: #007bff; color: white; padding: 15px; border: none; border-radius: 8px; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: background 0.3s; }
-        .submit-btn:hover { background: #0056b3; }
+        /* Service Cards avec images */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
+        .service-card { 
+            background: white; 
+            border-radius: 20px; 
+            overflow: hidden; 
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1); 
+            transition: all 0.4s; 
+            position: relative;
+        }
+        .service-card:hover { transform: translateY(-15px); box-shadow: 0 25px 50px rgba(0,0,0,0.15); }
+        .service-image { 
+            height: 220px; 
+            background-size: cover; 
+            background-position: center; 
+            position: relative;
+        }
+        .service-image::after {
+            content: ''; position: absolute; bottom: 0; left: 0; right: 0; 
+            height: 60px; background: linear-gradient(transparent, rgba(0,0,0,0.8));
+        }
+        .service-content { padding: 2rem; text-align: center; }
+        .service-card h3 { color: #007bff; margin-bottom: 1rem; font-size: 1.5rem; }
+        
+        /* Images spécifiques techniciens */
+        .frigo-card .service-image { background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'); }
+        .laver-card .service-image { background-image: url('https://images.unsplash.com/photo-1584722098667-be4a5f89b5bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'); }
+        .clima-card .service-image { background-image: url('https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80'); }
+        .four-card .service-image { background-image: url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3133?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'); }
+        
+        /* Section Techniciens */
+        .technicians { background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), 
+                       url('https://images.unsplash.com/photo-1558618047-3c8c76ca335e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover;
+                       text-align: center; padding: 100px 0; }
+        .technician-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .technician-card { background: rgba(255,255,255,0.95); padding: 2rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .technician-photo { 
+            width: 120px; height: 120px; 
+            background: #007bff; 
+            border-radius: 50%; 
+            margin: 0 auto 1rem; 
+            display: flex; align-items: center; justify-content: center;
+            font-size: 3rem;
+        }
+        
+        /* Marques */
+        .brands { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin-top: 3rem; }
+        .brand { background: linear-gradient(135deg, #007bff, #0056b3); color: white; padding: 12px 24px; border-radius: 30px; font-weight: bold; font-size: 0.9rem; transition: transform 0.3s; }
+        .brand:hover { transform: scale(1.05); }
+        
+        /* Contact Form */
+        .contact-form { max-width: 600px; margin: 0 auto; background: rgba(255,255,255,0.95); padding: 2.5rem; border-radius: 20px; backdrop-filter: blur(15px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .form-group { margin-bottom: 1.8rem; }
+        .form-group label { display: block; margin-bottom: 0.8rem; font-weight: bold; color: #333; }
+        .form-group input, .form-group textarea, .form-group select { 
+            width: 100%; padding: 15px; border: 2px solid #e9ecef; border-radius: 10px; font-size: 1rem; 
+            transition: all 0.3s; background: white;
+        }
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus { 
+            outline: none; border-color: #007bff; box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
+        }
+        .submit-btn { width: 100%; background: linear-gradient(135deg, #007bff, #0056b3); color: white; padding: 18px; border: none; border-radius: 12px; font-size: 1.2rem; font-weight: bold; cursor: pointer; transition: all 0.3s; }
+        .submit-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0,123,255,0.3); }
         
         /* Footer */
-        footer { background: #333; color: white; text-align: center; padding: 2rem 0; }
+        footer { background: #222; color: #ccc; text-align: center; padding: 2.5rem 0; }
         
         /* Responsive */
         @media (max-width: 768px) {
             .nav-links { display: none; }
             .hero h1 { font-size: 2.5rem; }
-            .phone { font-size: 1.1rem; padding: 8px 15px; }
+            .services-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -95,75 +141,94 @@
     <!-- Header -->
     <header>
         <nav class="container">
-            <div class="logo">🚀 Nom Réparation Rapide Tanger</div>
+            <div class="logo">🔧 Nom Réparation Rapide Tanger</div>
             <a href="tel:+212770903382" class="phone">📞 +212 770 903 382</a>
             <ul class="nav-links">
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#about">Qui sommes-nous</a></li>
+                <li><a href="#techniciens">Nos techniciens</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Accueil -->
+    <!-- Hero avec technicien -->
     <section id="accueil" class="hero">
         <div class="container">
-            <h1>🚀 Réparation Électroménager Tanger</h1>
-            <p><strong>Réparation rapide</strong> de votre frigo, machine à laver, climatiseur, four, hotte et sèche-linge<br>
-            <strong>Toutes marques</strong> • Intervention à domicile • +212 770 903 382</p>
-            <a href="tel:+212770903382" class="cta-button">📞 Appeler maintenant</a>
+            <h1>🔧 Réparation Électroménager Tanger</h1>
+            <p><strong>Nos techniciens qualifiés</strong> réparent votre frigo, lave-linge, clim, four<br>
+            <strong>Intervention rapide 24h</strong> • Toutes marques • Garantie 6 mois</p>
+            <a href="tel:+212770903382" class="cta-button">📞 Appeler le technicien</a>
         </div>
     </section>
 
-    <!-- Services -->
+    <!-- Services avec images techniciens -->
     <section id="services" class="services">
         <div class="container">
-            <h2>Nos Services de Réparation Électroménager Tanger</h2>
+            <h2>🔧 Nos Services - Techniciens Spécialisés</h2>
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🧊</div>
-                    <h3>Réparation Frigo Tanger</h3>
-                    <p>Réparation réfrigérateur, congélateur Samsung, LG, Whirlpool, Bosch, Beko</p>
+                <div class="service-card frigo-card">
+                    <div class="service-image"></div>
+                    <div class="service-content">
+                        <h3>🧊 Réparation Frigo Congélateur</h3>
+                        <p>Technicien spécialisé frigo Samsung, LG, Whirlpool, Bosch, Beko. Dépannage fuite, compresseur, thermostat</p>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">🧺</div>
-                    <h3>Réparation Machine à Laver</h3>
-                    <p>Lave-linge, sèche-linge Candy, Indesit, Hotpoint, Electrolux, AEG</p>
+                <div class="service-card laver-card">
+                    <div class="service-image"></div>
+                    <div class="service-content">
+                        <h3>🧺 Machine à Laver & Sèche-linge</h3>
+                        <p>Réparation lave-linge Candy, Indesit, Hotpoint, Electrolux. Vidange, essorage, pompe</p>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">❄️</div>
-                    <h3>Réparation Climatisation</h3>
-                    <p>Climatiseur split, fenêtre toutes marques à Tanger, Tetouan, M'diq</p>
+                <div class="service-card clima-card">
+                    <div class="service-image"></div>
+                    <div class="service-content">
+                        <h3>❄️ Climatisation Split</h3>
+                        <p>Technicien clim toutes marques. Recharge gaz, nettoyage, dépannage unité extérieure</p>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">🔥</div>
-                    <h3>Réparation Four & Hotte</h3>
-                    <p>Four électrique, gaz, hotte aspirante toutes marques</p>
+                <div class="service-card four-card">
+                    <div class="service-image"></div>
+                    <div class="service-content">
+                        <h3>🔥 Four & Hotte</h3>
+                        <p>Réparation four électrique/gaz, hotte aspirante. Résistance, carte électronique, ventilation</p>
+                    </div>
                 </div>
             </div>
             
-            <!-- Marques SEO -->
+            <!-- Toutes les marques -->
             <div class="brands">
                 <span>Samsung</span><span>LG</span><span>Whirlpool</span><span>Bosch</span>
                 <span>Beko</span><span>Candy</span><span>Indesit</span><span>Hotpoint</span>
-                <span>Electrolux</span><span>AEG</span>
+                <span>Electrolux</span><span>AEG</span><span>TCL</span><span>Haier</span>
             </div>
         </div>
     </section>
 
-    <!-- Qui sommes-nous -->
-    <section id="about" class="about">
+    <!-- Section Nos Techniciens -->
+    <section id="techniciens" class="technicians">
         <div class="container">
-            <h2>Qui sommes-nous ?</h2>
-            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-                <p><strong>Nom Réparation Rapide Tanger</strong> est votre spécialiste de la réparation électroménager à Tanger depuis plus de 10 ans.</p>
-                <p>✅ Intervention rapide sous 24h<br>
-                ✅ Techniciens certifiés<br>
-                ✅ Pièces d'origine toutes marques<br>
-                ✅ Devis gratuit<br>
-                ✅ Garantie 6 mois sur toutes réparations</p>
-                <p>Nous réparons <strong>toutes les marques d'électroménager</strong> : Samsung, LG, Whirlpool, Bosch, Beko, Candy, Indesit, Hotpoint, Electrolux, AEG et bien d'autres !</p>
+            <h2>👨‍🔧 Nos Techniciens Qualifiés Tanger</h2>
+            <p style="max-width: 800px; margin: 0 auto 3rem; font-size: 1.2rem; color: #333;">
+                15+ ans d'expérience • Formations marques • Pièces d'origine • Garantie intervention
+            </p>
+            <div class="technician-grid">
+                <div class="technician-card">
+                    <div class="technician-photo">🔧</div>
+                    <h3>Mohamed - Spécialiste Frigo</h3>
+                    <p>Expert Samsung, LG, Bosch - 12 ans expérience</p>
+                </div>
+                <div class="technician-card">
+                    <div class="technician-photo">🧺</div>
+                    <h3>Ahmed - Lave-linge</h3>
+                    <p>Maître Candy, Indesit, Whirlpool</p>
+                </div>
+                <div class="technician-card">
+                    <div class="technician-photo">❄️</div>
+                    <h3>Youssef - Climatisation</h3>
+                    <p>Toutes marques split et fenêtre</p>
+                </div>
             </div>
         </div>
     </section>
@@ -171,30 +236,35 @@
     <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>📞 Contactez-nous dès maintenant</h2>
-            <div style="text-align: center; margin-bottom: 2rem;">
-                <a href="tel:+212770903382" style="font-size: 2rem; color: #fff; text-decoration: none; background: rgba(255,255,255,0.2); padding: 15px 30px; border-radius: 50px; display: inline-block; margin: 10px;">+212 770 903 382</a>
-                <p style="font-size: 1.2rem; margin-top: 1rem;">Intervention rapide à Tanger, Tetouan, M'diq</p>
+            <h2 style="color: white;">📞 Appelez votre technicien</h2>
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <a href="tel:+212770903382" style="font-size: 2.5rem; color: white; text-decoration: none; background: rgba(255,255,255,0.2); padding: 20px 40px; border-radius: 50px; display: inline-block; margin: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">+212 770 903 382</a>
+                <p style="font-size: 1.3rem;">🚚 Intervention Tanger, Tetouan, M'diq sous 24h</p>
             </div>
             
-            <form class="contact-form" onsubmit="alert('Merci ! Nous vous rappelons sous 30min. 📞')">
+            <form class="contact-form">
                 <div class="form-group">
-                    <label>Nom *</label>
+                    <label>👤 Nom *</label>
                     <input type="text" required>
                 </div>
                 <div class="form-group">
-                    <label>Téléphone *</label>
+                    <label>📱 Téléphone *</label>
                     <input type="tel" required>
                 </div>
                 <div class="form-group">
-                    <label>Appareil à réparer</label>
-                    <input type="text" placeholder="Frigo Samsung, Machine à laver LG...">
+                    <label>🔧 Appareil (Marque)</label>
+                    <select>
+                        <option>Frigo Samsung</option>
+                        <option>Lave-linge LG</option>
+                        <option>Clim Whirlpool</option>
+                        <option>Autre...</option>
+                    </select>
                 </div>
                 <div class="form-group">
-                    <label>Message</label>
-                    <textarea rows="4" placeholder="Décrivez le problème..."></textarea>
+                    <label>💬 Problème</label>
+                    <textarea rows="4" placeholder="Le frigo ne refroidit plus..."></textarea>
                 </div>
-                <button type="submit" class="submit-btn">Envoyer la demande</button>
+                <button type="submit" class="submit-btn">🚀 Demander intervention rapide</button>
             </form>
         </div>
     </section>
@@ -202,45 +272,38 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Nom Réparation Rapide Tanger | Réparation électroménager Tanger | <a href="tel:+212770903382" style="color: #007bff;">+212 770 903 382</a></p>
-            <p>Réparation frigo Tanger • Machine à laver Tanger • Climatisation Tanger • Samsung LG Whirlpool Bosch</p>
+            <p>🔧 Nom Réparation Rapide Tanger 2024 | <a href="tel:+212770903382" style="color: #007bff;">+212 770 903 382</a></p>
+            <p>Réparation électroménager Tanger • Techniciens qualifiés • Frigo • Lave-linge • Clim • Samsung LG Bosch</p>
         </div>
     </footer>
 
     <script>
-        // Smooth scroll
+        // Smooth scroll + form
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
             });
         });
 
-        // WhatsApp floating button
-        const whatsappBtn = document.createElement('a');
-        whatsappBtn.href = 'https://wa.me/212770903382';
-        whatsappBtn.innerHTML = '💬 WhatsApp';
-        whatsappBtn.style.cssText = `
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #25D366;
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            box-shadow: 0 4px 15px rgba(37,211,102,0.4);
-            z-index: 1000;
-            text-decoration: none;
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('✅ Technicien rappel sous 30min ! 📞 +212 770 903 382');
+        });
+
+        // WhatsApp + Appel flottant
+        const floatBtn = document.createElement('a');
+        floatBtn.href = 'https://wa.me/212770903382?text=Bonjour%2C+j%27ai+besoin+d%27un+technicien+pour+mon+électroménager+%C3%A0+Tanger';
+        floatBtn.innerHTML = '💬 WhatsApp';
+        floatBtn.style.cssText = `
+            position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white;
+            width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center;
+            justify-content: center; font-size: 1.8rem; box-shadow: 0 5px 20px rgba(37,211,102,0.4);
+            z-index: 1001; text-decoration: none; transition: transform 0.3s;
         `;
-        document.body.appendChild(whatsappBtn);
+        floatBtn.onmouseover = () => floatBtn.style.transform = 'scale(1.1)';
+        floatBtn.onmouseout = () => floatBtn.style.transform = 'scale(1)';
+        document.body.appendChild(floatBtn);
     </script>
-</head>
 </body>
 </html>
